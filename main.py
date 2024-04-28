@@ -38,7 +38,7 @@ def run_game(game_list=gd.data, round_end=False):
         candidate2 = gf.random_selection(live_list)
 
         # prints the visuals for the player
-        gf.game_display(candidate, candidate2, False)
+        gf.game_display(candidate, candidate2, False, score)
 
         # ask user for their input as to whom has the most followers on instagram
         user_choice = input("Who has more followers? Type 'A' or 'B': ").lower()

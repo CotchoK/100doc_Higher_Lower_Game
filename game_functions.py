@@ -23,7 +23,7 @@ def compare(person1, person2):
         return 0
 
 
-def game_display(person1, person2, player_lost=False, score=None):
+def game_display(person1, person2, player_lost=False, score=0):
     """
     Displays specific text to the player based on what flags are passed to it
     :param person1: candidate 1 for the game
@@ -35,6 +35,9 @@ def game_display(person1, person2, player_lost=False, score=None):
     if not player_lost:
         # print the logo
         print(a.logo)
+
+        if score > 0:
+            print(f"You're right! Current score: {score}")
 
         # print text for first randomly chosen item from game_data.py item of comparison
         print(f"Compare A: {person1['name']}, a {person1['description']}, from {person1['country']}")
