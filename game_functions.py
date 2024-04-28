@@ -46,7 +46,7 @@ def game_display(person1, person2, player_lost=False, score=0):
         print(a.vs)
 
         # print text for the secondly randomly chosen item from the game_data.py item of comparison
-        print(f"Compare B: {person2['name']}, a {person2['description']}, from {person2['country']}")
+        print(f"Against B: {person2['name']}, a {person2['description']}, from {person2['country']}")
     else:
         # print the logo
         print(a.logo)
